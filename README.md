@@ -13,48 +13,71 @@ Usage Example (Anchor model):
 ## 1. process data
 
 cd TF_exp/data_process/anchor_dnase
+
 ./bash.sh
+
 cd ../sequence
+
 ./bash.sh
+
 cd ../gencode
+
 ./bash.sh
 
 ## 2. train and predict
 
 ### (1) subsample negative cases
+
 cd TF_exp/data/sample
+
 ./bash.sh 
 
 ### (2) prepare training & validation data
+
 cd ../train_test/anchor
+
 ./bash.sh
 
 ### (3) train models
+
 cd ../../../model/anchor
+
 ./bash.sh
 
 ### (4) predict
+
 cd ../../prediction/anchor/
+
 ./bash.sh
 
 ## 3. analyze
 
 ### (1) prepare data for evaluation
+
 cd TF_exp/evaluation/target # gold standard
+
 bash bash.sh
+
 cd ../anchor/ # prediction
+
 ./bash.sh
 
 ### (2) calcualte AUROCs and AUPRCs
+
 cd ../../analysis/
+
 ./bash.sh
 
 ## 4. feature importance
+
 cd TF_exp/feature_importance
+
 ./bash.sh
 
 ## 5. plot
+
 cd TF_exp/analysis/
+
 Rscript plot_fig1.r
 
 
