@@ -1,0 +1,14 @@
+CTCF.PC-3
+FOXA1.liver
+FOXA2.liver
+CTCF.induced_pluripotent_stem_cell
+HNF4A.liver
+NANOG.induced_pluripotent_stem_cell
+MAX.liver
+E2F1.K562
+GABPA.liver
+ATF3.liver
+JUND.liver
+EGR1.liver
+REST.liver
+TAF1.liver
